@@ -1,0 +1,95 @@
+/* src/features/home/components/HomeDoorsList.module.css */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 12px;
+    padding: 2rem;
+    background: var(--gray-alpha-50);
+    margin-bottom: 4rem;
+  }
+  
+  .shieldContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    perspective: 600px;
+  }
+  
+  .shieldIcon {
+    width: 14rem;
+    height: 14rem;
+    transform-style: preserve-3d;
+  }
+  
+  .shieldText {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    background: #000;
+    border: 2px solid var(--color-error);
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.2s;
+  }
+  
+  .card:hover {
+    background: rgba(255,0,0,0.15);
+  }
+  
+  .cardText {
+    flex-grow: 1;
+    font-weight: 500;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 640px) {
+    .wrapper {
+      padding: 3rem;
+    }
+    .shieldIcon {
+      width: 16rem;
+      height: 16rem;
+    }
+    .content {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .wrapper {
+      padding: 4rem;
+    }
+    .shieldIcon {
+      width: 18rem;
+      height: 18rem;
+    }
+    .content {
+      width: 40%;
+    }
+  }
+  

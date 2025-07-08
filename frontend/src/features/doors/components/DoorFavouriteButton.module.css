@@ -1,0 +1,12 @@
+.btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    transition: color 0.2s ease;
+  }
